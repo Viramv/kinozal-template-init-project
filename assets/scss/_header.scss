@@ -1,5 +1,5 @@
-.header{
-
+header {
+ @extend %margin-bottom-lg;
 }
 .header-logo{
   text-align: center;

@@ -2,7 +2,12 @@
   text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
 }
 
+header, .main, .left-sidebar {
+  margin-bottom: 80px;
+}
+
 .navbar-inverse {
+  margin-bottom: 0;
   background-color: #191919;
 }
 
@@ -31,6 +36,26 @@
 .navbar-toggle {
   float: none;
   margin-right: 0;
+}
+
+.panel {
+  background-color: #f0f0f0;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.panel-body {
+  border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
+}
+
+.panel-info > .panel-heading {
+  color: #ffffff;
+  background-color: #df8a13;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
 }
 
 html {
