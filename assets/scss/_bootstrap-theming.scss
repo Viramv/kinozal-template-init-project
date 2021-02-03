@@ -2,8 +2,8 @@
   margin-bottom: 0;
   background-color: darken($color-dark, 4%) ;
 
-.navbar-nav{
-> .active > a,{
+ .navbar-nav {
+  > .active > a {
   background-color: $color-primary-dark;
 
   &:focus,
@@ -14,23 +14,23 @@
 
  > li > a {
   transition: background-color 0.5s;
-@include sm-min {
+ @include sm-min {
    border-radius: 5px;
  }
-   @include sm{
+   @include sm {
      text-align: center;
    }
   &:hover,
-  &:focus{
+  &:focus {
     background-color: $color-primary;
     }
    }
   }
 }
 
-.navbar-left{
+.navbar-left {
   @include sm-min {
-  li{
+  li {
     margin: 5px 5px 5px 0;
   }
 }
@@ -62,7 +62,7 @@
   border: none;
   margin-bottom: $gap*2;
 
-  $-info > .panel-heading {
+  &-info > .panel-heading {
   color: $color-light;
   background-color: $color-accent;
   border: none;
@@ -71,10 +71,16 @@
   letter-spacing: 0.1em;
 }
 
-  $-body{
+  &-body {
   border: 1px solid $color-gray;
   border-radius: 0 0 4px 4px;
 }
-
 }
 
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+}
+.thumbnail {
+  transition: background-color 0.25s;
+}

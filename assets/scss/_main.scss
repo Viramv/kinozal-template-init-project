@@ -1,3 +1,27 @@
 .main{
   @extend %margin-bottom-lg;
+  .site-search {
+    margin-bottom: 45px;
+  }
+  .user-login {
+    margin-bottom: 60px;
+  }
+}
+.new-films {
+  &__row {
+    margin-right: -$gap/2;
+    margin-left: -$gap/2;
+    margin-bottom: -$gap;
+  }
+&__item {
+  padding-right: $gap/2;
+  padding-letf: $gap/2;
+  margin-bottom: $gap;
+}
+&__thumbnail {
+  margin-bottom: 0;
+}
+  &__title {
+    @include text-shortener;
+  }
 }

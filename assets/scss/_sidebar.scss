@@ -1,7 +1,141 @@
-.left-sidebar{
+.left-sidebar {
   @extend %margin-bottom-lg;
 
-  .panel:last-of-type{
+  .panel:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+
+ &__image {
+    width: 100%;
+
+}
+}
+
+.user-login {
+  position: relative;
+
+  &__tabs {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border: none;
+
+    a {
+      background-color: transparent !important;
+      border: none !important;
+      color: $color-gray;
+      padding: 14px 5px 11px !important;
+    }
+
+    .active > a {
+      color: $color-light !important;
+    }
+  }
+}
+
+.site-news-item {
+  clear: both;
+  position: relative;
+
+  &__image {
+    float: left;
+    width: 75px;
+    margin: 0 10px 10px 0;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    transition: color 0.25s;
+
+    a {
+      @include block-shortener(1rem, 1.5, 70px, 3)
+    }
+  }
+
+  &__date {
+    text-align: right;
+    font-size: 0.8rem;
+    color: darken($color-gray, 30%);
+  }
+
+  &:hover {
+    a {
+      color: $color-accent;
+    }
+
+    .site-news-item__image {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+   }
+
+  &:not(:last-child) {
+    min-height: 85px;
+    margin-bottom: $gap;
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        width: calc(100% - 85px);
+        height: 1px;
+        background-color: $color-gray;
+    }
+  }
+}
+
+.top-films {
+
+  &__body{
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+
+  }
+
+  &__list{
+
+  }
+
+  &__item {
+  margin-right: -1px;
+    margin-left: -1px;
+    background-color: transparent;
+   color:$color-primary !important; ;
+    padding-right: 55px;
+
+    &:first-child{
+      border-top:0;
+      border-radius: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      border-radius: 0;
+    }
+    &:hover,
+    &:focus {
+      color: $color-light !important;
+      background-color: $color-accent !important;
+      border-color: $color-accent;
+
+      .badge {
+        background-color: $color-dark;
+      }
+    }
+  }
+
+  &__badge {
+ position: absolute;
+ right: $gap;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+
+
 }

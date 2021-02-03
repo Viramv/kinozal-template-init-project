@@ -9,3 +9,19 @@ body{
   font-family: $font-main;
   font-size: $font-size;
 }
+h1 {
+  font-family: $font-header;
+  margin:(-$gap/2) 0 $gap*3;
+  font-size: 3rem;
+}
+
+
+a {
+  color:$color-primary;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}
